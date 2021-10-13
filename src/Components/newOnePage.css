@@ -1,0 +1,477 @@
+.casing1{
+  width:100%;
+  height:89vh;
+  position: relative !important;
+  background-color: #FFFFFF;
+  background-repeat:no-repeat !important;
+  background-size:100% 30vh !important;
+  bottom: 0 !important;
+  border-radius: 4px !important;
+  top: 2vh;
+}
+@media only screen and (max-width: 1600px) {
+  .casing1 {
+    height:89vh;
+    margin-top: 2vh;
+     }
+    }
+    .box1{
+      height: 92vh;
+      width: 100%;
+      background-color: #FFFFFF; 
+      border-radius: 4px;
+      position: relative;
+      right: 9%;
+      /* box-shadow: 3px 3px 15px #00000029; */
+      margin-top: 2vh;
+      margin-bottom: 1vh;
+    }
+@media only screen and (max-width: 1600px) {
+  .box1 {
+    height:92vh;
+    margin-top: 2vh;
+    margin-bottom: 1vh;
+     }
+    }
+ .casing1:hover{
+  position: relative !important;
+  background-repeat:no-repeat !important;
+  background-size:100% 30vh !important;
+  width:100%;
+  margin-top:"0.5vh";
+}
+.casing1{
+  margin-top: 0vh !important;
+}
+.casing2{
+
+  background-image:url("./assets/autumn-forest.jpg");
+  background-repeat:no-repeat;
+  background-size:100% 25vh;
+  position: relative;
+}
+
+
+
+
+
+.btn-send{
+position: absolute;
+z-index: 66;
+}
+
+#flexSwitchCheckChecked{
+background-color:grey;
+border-color: grey;
+margin-left: 0.5vw;
+}
+img.eye{
+width:1.5vw;
+}
+.d-flex{
+margin-bottom: 2vh;
+}
+
+.ql-toolbar.ql-snow{
+background-color:#dcdfde69;
+border-top-right-radius: 5px;
+border-top-left-radius: 5px;
+
+}
+.ql-container.ql-snow {
+border-bottom-right-radius: 5px;
+border-bottom-left-radius: 5px;
+/* height: 60vh!important; */
+
+}
+ @media only screen and (min-width: 640px) {
+.d-flex.justify-content-center {
+  padding-top: 0px;
+}}
+
+
+@media only screen and (max-width: 2000px) {
+#footerr {
+height: 6.5vh !important;
+}
+}
+
+@media only screen and (max-width: 640px) {
+#newOnePagee {
+ top:35vh!important; 
+ box-shadow: none;
+ height: 60vh; 
+ width: 98vw !important;
+ border-radius: 0px 0px;
+}
+
+}
+
+.reactQuill {
+height: 50vh !important;
+}
+
+div.ql-editor.ql-blank{
+height: 22vh ;
+z-index: 10;
+/* max-height: 100px; */
+}
+
+
+.btnPlus{
+border: 1px solid transparent;
+display: inline-block;
+height: 3vh;
+width: 3vh;
+border-radius:4px;
+color:#DB0E65  ;
+border-color:#DB0E65  ;
+top:45%;
+position:relative;
+padding:0;
+cursor: pointer;
+
+}
+
+
+.btnPlus:hover{
+background: #DB0E65  !important;
+color: #FFFFFF !important;
+}
+/* .btnPlus1{
+background-image: url("./assets/plusOrange.png");
+background-size: cover;
+}
+.btnPlus1:hover{
+background-image: url("./assets/plusWhite.png");
+background-size: cover;
+} */
+
+.bkimage{
+/* background-image: url("./assets/orange1.png"); */
+background-color: #DB0E65;
+background-size: cover;
+size:80%; 
+width: 3.5vw;
+
+} 
+.importPdfButton{
+/* background:linear-gradient(to bottom, #f7b500 0%, #d58428 100%) !important; */
+z-index: 8;
+cursor: pointer;
+}
+
+
+
+
+
+
+/* xlarge screen */
+@media only screen and (min-width: 3840px) {
+#flexSwitchCheckChecked {
+
+margin-left: 3vw !important;
+}
+
+} 
+/* large screen */
+@media only screen and (min-width: 1920px)and (max-width: 3830px) {
+#flexSwitchCheckChecked {
+
+
+margin-left: 0.5vw !important;
+}
+}
+/* medium screen */
+@media only screen and (min-width: 1440px)and (max-width: 1910px) {
+#flexSwitchCheckChecked {
+
+margin-left: -1.5vw !important;
+}
+}
+/* small screen */
+@media only screen and (min-width: 1280px)and (max-width: 1430px) {
+#flexSwitchCheckChecked {
+
+margin-left: -2vw !important;
+}
+
+} 
+
+
+
+
+
+/* xlarge screen */
+@media only screen and (min-width: 3840px) {
+input#flexSwitchCheckChecked\ aaa {
+
+
+margin-left: 3.2vw !important;
+}
+
+} 
+/* large screen */
+@media only screen and (min-width: 1920px)and (max-width: 3830px) {
+input#flexSwitchCheckChecked\ aaa {
+
+margin-left: 1.4vw !important;
+}
+}
+/* medium screen */
+@media only screen and (min-width: 1440px)and (max-width: 1910px) {
+input#flexSwitchCheckChecked\ aaa{
+
+margin-left: -0.5vw !important;
+}
+}
+/* small screen */
+@media only screen and (min-width: 1280px)and (max-width: 1430px) {
+input#flexSwitchCheckChecked\ aaa {
+
+margin-left: -1vw !important;
+}
+
+} 
+
+
+input#flexSwitchCheckChecked\ aaa {
+
+/* background-color: gray; */
+border: gray;
+
+}
+
+input.Production-fieldTextStyle-71{
+border-radius: 2px;
+}
+
+.basic-multi-select.css-2b097c-container{
+height:2vh;
+}
+
+
+
+
+
+.ql-toolbar.ql-snow+.ql-container.ql-snow {
+  height: 22vh!important;
+  }
+
+
+  span.importPdfShow.border.rounded{
+    /* margin-top: -10%; */
+    margin-top: 3vh;
+  }
+  .box1.d-none.d-sm-block{
+
+/*     height: 90vh;
+    margin-top: 1.5vh; */
+
+    
+    height: 89vh;
+    margin-bottom: 1vh;
+
+  }
+  img.imgTableAndChairs{
+    opacity: 1.6;
+  }
+
+
+/* xlarge screen */
+@media only screen and (min-width: 3840px) {
+/* .navmobile{
+display: none!important;
+} */
+img.eye{
+margin-left: 1.4vw !important;
+}
+
+} 
+/* large screen */
+@media only screen and (min-width: 1920px)and (max-width: 3830px) {
+/* .navmobile{
+display: none!important;
+} */
+img.eye{
+margin-left: 0.7vw !important;
+}
+}
+/* medium screen */
+@media only screen and (min-width: 1440px)and (max-width: 1700px) {
+/* .navmobile{
+display: none!important;
+} */
+img.eye{
+margin-left: 0vw !important;
+}
+
+} 
+/* small screen */
+@media only screen and (min-width: 1280px)and (max-width: 1430px) {
+/* .navmobile{
+display: none!important;
+} */
+img.eye{
+margin-left: -0.1vw !important;
+}
+
+} 
+
+
+.dropdownMobile{
+padding:"1vh 4vw";
+box-shadow: " 0px 2px 3px #00000029";
+}
+
+
+.dropdown-item-button-nav{
+font:"roboto";
+appearance: "none";
+content: "none";
+
+}
+
+.dropdown-item-button-nav:active{
+border:none;
+}
+
+@media only screen and (max-width: 640px){
+#logo{
+height:9vw !important;
+width: 9vw !important;
+}
+#TypeYourPropsalName{
+font-size: 2vh !important;
+width:60vw !important;
+}
+.newOnePage{
+  margin: 0 !important;
+}
+.casing1{
+  margin: 0 !important
+}
+.row{
+  margin: 0 !important;
+}
+.d-flex.justify-content-center.titelheder{
+  top:20vh !important;
+}
+#footerr{
+  position: fixed !important;
+  bottom: 3vh;
+}
+#title{
+  width: 80vw !important;
+}
+}
+
+
+
+
+
+button.rc-menu-button{
+background-color: white;
+
+}
+ul.rc-menu.rc-menu--open.rc-menu--animation.rc-menu--dir-bottom{
+margin-left: -7vw;
+}
+nav.navbar.navbar-expand.navbar-light{
+height: inherit;
+}
+span.select__indicator-separator.css-1okebmr-indicatorSeparator{
+display: none;
+}
+/* svg.css-tj5bde-Svg{
+display: none;
+} */
+
+img.d-flex.justify-content-center.upload{
+  justify-content: center;
+  width: 7vw;
+  /* margin-left: 17vw; */
+  /* 3vh */
+  padding-top:6vh;
+  margin:auto;
+}
+p.d-flex.justify-content-center{
+  font-size: 3vh;
+}
+.btnUpload{
+  justify-content: center;
+  width: 10vw;
+  margin-left: 17vw;
+  background-color: #DB0E65;
+  color: white;
+  border-radius: inherit;
+  /* margin-bottom: 5vh; */
+  cursor: pointer;
+ position: absolute;
+  z-index: 9999999999;
+   /* margin-top: 8vh */
+}
+
+.updateBtnPdf{
+  justify-content: center;
+  width: 10vw;
+  margin-left: 17vw;
+  background-color: #DB0E65;
+  color: white;
+  border-radius: inherit;
+  /* margin-bottom: 5vh; */
+  cursor: pointer;
+ position: absolute;
+  z-index: 9999999999;
+  margin-top: 23vh !important;
+
+}
+.endItem4:focus{
+  color:#FBFBFD !important
+}
+[contenteditable]:focus {
+  outline: 0px solid transparent;
+}       
+div#toolbar{
+  display: none;
+
+}
+/* #progresBar{
+  padding-top: 19.5vh !important;
+  z-index: 2147483647;
+} */
+#progresBar{
+  padding-top: 10vh !important;
+  z-index: 2147483647;
+  position: fixed;
+  width: 65.5vw;
+}
+
+embed.importPdfEmbedt{
+  position: absolute;
+  top: 0;
+    width: inherit;
+    height: inherit;
+}
+embed.importPdfEmbed{
+  /* position: absolute; */
+  top: 0;
+  
+}
+.none{
+  display: none;
+  }
+
+.businessSignature{
+  width: 7.3vw;
+  height: auto;
+}
+.quillWithoutImage .ql-toolbar.ql-snow+.ql-container.ql-snow{
+  height: 40vh !important;
+  }
+
+
+
+
+
+  

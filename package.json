@@ -1,0 +1,221 @@
+{
+  "name": "targil1",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@babel/core": "7.9.0",
+    "@date-io/date-fns": "^1.3.13",
+    "@emotion/react": "^11.4.1",
+    "@emotion/styled": "^11.3.0",
+    "@fortawesome/fontawesome-svg-core": "^1.2.32",
+    "@fortawesome/free-solid-svg-icons": "^5.15.1",
+    "@fortawesome/react-fontawesome": "^0.1.12",
+    "@leadercodes/header": "^0.1.0",
+    "@leadercodes/leader-header": "^3.0.7",
+    "@material-ui/core": "^5.0.0-beta.5",
+    "@material-ui/icons": "^4.9.1",
+    "@material-ui/lab": "^4.0.0-alpha.56",
+    "@material-ui/pickers": "^3.2.10",
+    "@material-ui/styles": "^4.11.4",
+    "@material/radio": "^12.0.0",
+    "@pdftron/webviewer": "^7.3.2",
+    "@progress/kendo-drawing": "^1.9.4",
+    "@progress/kendo-licensing": "^1.1.3",
+    "@progress/kendo-react-pdf": "^4.3.0",
+    "@react-pdf/renderer": "^1.6.13",
+    "@reduxjs/toolkit": "^1.4.0",
+    "@svgr/webpack": "4.3.3",
+    "@szhsin/react-menu": "^1.10.1",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.5.0",
+    "@testing-library/user-event": "^7.2.1",
+    "@typescript-eslint/eslint-plugin": "^2.10.0",
+    "@typescript-eslint/parser": "^2.10.0",
+    "axios": "^0.21.1",
+    "babel-eslint": "10.1.0",
+    "babel-jest": "^24.9.0",
+    "babel-loader": "8.1.0",
+    "babel-plugin-named-asset-import": "^0.3.6",
+    "babel-preset-react-app": "^9.1.2",
+    "bootstrap": "^4.6.0",
+    "bootstrap-icons": "^1.5.0",
+    "browser-image-compression": "^1.0.14",
+    "camelcase": "^5.3.1",
+    "caniuse-lite": "^1.0.30001237",
+    "case-sensitive-paths-webpack-plugin": "2.3.0",
+    "convert-pdf-png": "0.0.1",
+    "copy-to-clipboard": "^3.3.1",
+    "cors": "^2.8.5",
+    "css-loader": "3.4.2",
+    "date-fns": "^2.22.1",
+    "dotenv": "8.2.0",
+    "dotenv-expand": "5.1.0",
+    "eslint": "^6.6.0",
+    "eslint-config-react-app": "^5.2.1",
+    "eslint-loader": "3.0.3",
+    "eslint-plugin-flowtype": "4.6.0",
+    "eslint-plugin-import": "2.20.1",
+    "eslint-plugin-jsx-a11y": "6.2.3",
+    "eslint-plugin-react": "7.19.0",
+    "eslint-plugin-react-hooks": "^1.6.1",
+    "fetch-react": "^0.4.0",
+    "file-loader": "4.3.0",
+    "file-saver": "^2.0.5",
+    "font-picker-react": "^3.5.2",
+    "fs-extra": "^8.1.0",
+    "get-orientation": "^1.1.2",
+    "glyphicons": "^0.2.0",
+    "html-webpack-plugin": "4.0.0-beta.11",
+    "html2canvas": "^1.0.0-rc.7",
+    "i": "^0.3.6",
+    "identity-obj-proxy": "3.0.0",
+    "immer": "^7.0.14",
+    "jest": "24.9.0",
+    "jest-environment-jsdom-fourteen": "1.0.1",
+    "jest-resolve": "24.9.0",
+    "jest-watch-typeahead": "0.4.2",
+    "jquery": "^3.5.1",
+    "jspdf": "^2.3.0",
+    "jszip": "^3.6.0",
+    "material-ui-filter": "^3.1.3",
+    "mini-css-extract-plugin": "0.9.0",
+    "npm": "^7.17.0",
+    "optimize-css-assets-webpack-plugin": "5.0.3",
+    "pdf-to-img": "^1.1.0",
+    "pdf-to-text": "0.0.7",
+    "pdf2img-promises": "^0.6.6",
+    "pnp-webpack-plugin": "1.6.4",
+    "postcss-flexbugs-fixes": "4.1.0",
+    "postcss-loader": "3.0.0",
+    "postcss-normalize": "8.0.1",
+    "postcss-preset-env": "6.7.0",
+    "postcss-safe-parser": "4.0.1",
+    "quill": "^1.3.7",
+    "quill-image-resize-module-react": "^3.0.0",
+    "react": "^16.14.0",
+    "react-app-polyfill": "^1.0.6",
+    "react-bootstrap-dropdown": "^0.3.0",
+    "react-bootstrap-table-next": "^4.0.3",
+    "react-bootstrap-table2-overlay": "^2.0.0",
+    "react-bootstrap-table2-paginator": "^2.1.2",
+    "react-bootstrap-table2-toolkit": "^2.1.3",
+    "react-bootstrap-validation": "^0.1.11",
+    "react-color": "^2.18.1",
+    "react-contenteditable": "^3.3.5",
+    "react-dev-utils": "^10.2.1",
+    "react-dom": "^16.14.0",
+    "react-easy-crop": "^3.5.1",
+    "react-icons": "^3.11.0",
+    "react-inputs-validation": "^4.5.2",
+    "react-lottie": "^1.2.3",
+    "react-native-cli": "^2.0.1",
+    "react-native-pdf-to-image": "^3.0.2",
+    "react-pdf": "^5.0.0",
+    "react-pdf-to-image": "^1.0.2",
+    "react-quill": "^1.3.5",
+    "react-quilljs": "^1.2.12",
+    "react-radio-buttons": "^1.2.2",
+    "react-redux": "^7.2.1",
+    "react-router-dom": "^5.2.0",
+    "react-select": "^4.3.0",
+    "react-signature-canvas": "^1.0.3",
+    "react-to-pdf": "0.0.14",
+    "react-tooltip": "^4.2.10",
+    "reactstrap": "^8.8.1",
+    "redux": "^4.0.5",
+    "resolve": "1.15.0",
+    "sass-loader": "8.0.2",
+    "semantic-ui-react": "^1.0.0",
+    "semver": "6.3.0",
+    "style-loader": "0.23.1",
+    "terser-webpack-plugin": "2.3.8",
+    "ts-pnp": "1.1.6",
+    "typescript": "^3.9.7",
+    "url-loader": "2.3.0",
+    "use-clipboard-copy": "^0.2.0",
+    "validator-js": "^0.2.1",
+    "webpack": "4.42.0",
+    "webpack-dev-server": "3.11.0",
+    "webpack-manifest-plugin": "2.2.0",
+    "workbox-webpack-plugin": "4.3.1"
+  },
+  "scripts": {
+    "start": "node scripts/start.js",
+    "build": "node scripts/build.js",
+    "test": "node scripts/test.js"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "react-bootstrap": "^1.6.1",
+    "redux-devtools": "^3.6.0"
+  },
+  "jest": {
+    "roots": [
+      "<rootDir>/src"
+    ],
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx,ts,tsx}",
+      "!src/**/*.d.ts"
+    ],
+    "setupFiles": [
+      "react-app-polyfill/jsdom"
+    ],
+    "setupFilesAfterEnv": [
+      "<rootDir>/src/setupTests.js"
+    ],
+    "testMatch": [
+      "<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}",
+      "<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"
+    ],
+    "testEnvironment": "jest-environment-jsdom-fourteen",
+    "transform": {
+      "^.+\\.(js|jsx|ts|tsx)$": "<rootDir>/node_modules/babel-jest",
+      "^.+\\.css$": "<rootDir>/config/jest/cssTransform.js",
+      "^(?!.*\\.(js|jsx|ts|tsx|css|json)$)": "<rootDir>/config/jest/fileTransform.js"
+    },
+    "transformIgnorePatterns": [
+      "[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$",
+      "^.+\\.module\\.(css|sass|scss)$"
+    ],
+    "modulePaths": [],
+    "moduleNameMapper": {
+      "^react-native$": "react-native-web",
+      "^.+\\.module\\.(css|sass|scss)$": "identity-obj-proxy"
+    },
+    "moduleFileExtensions": [
+      "web.js",
+      "js",
+      "web.ts",
+      "ts",
+      "web.tsx",
+      "tsx",
+      "json",
+      "web.jsx",
+      "jsx",
+      "node"
+    ],
+    "watchPlugins": [
+      "jest-watch-typeahead/filename",
+      "jest-watch-typeahead/testname"
+    ]
+  },
+  "babel": {
+    "presets": [
+      "react-app"
+    ]
+  }
+}

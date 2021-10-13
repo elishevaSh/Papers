@@ -1,0 +1,24 @@
+bottun.header-Btn{
+    height: inherit;
+    cursor: pointer;
+    padding-left: 0vw;
+
+}
+
+bottun.header-Btn-logo{
+    margin-left: 1vw;
+}
+
+img.header-img{
+height: 5vh;
+}
+
+bottun.header-Btn-name{
+    margin-right: 1vw;
+    padding-top: 2.3vh;
+}
+
+nav.navbar.navbar-expand.navbar-light.header{
+    box-shadow: -1px -3px 10px 1px #1311117a;
+
+}

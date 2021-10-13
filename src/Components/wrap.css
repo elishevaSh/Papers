@@ -1,0 +1,90 @@
+div#wrap-configurator{
+    height: 93vh !important;
+    width:15.5%;
+     position: fixed ;
+      float: left;
+      /* height: "95vh" */
+}
+.polygon{
+    height: 3vh;
+    margin-top: -5vh;
+    align-items: center;
+    margin-right: -0.1vw;
+}
+.imgPol{
+    height: 2vh;
+    float: right;
+}
+.myPointer{
+    cursor: pointer;
+}
+.d-flex.justify-content-center.wrap{
+    /* margin-top: -2vh; */
+    padding-bottom: 1vh;
+}
+.d-flex.justify-content-center.none{
+    margin-top: -5vh;
+    margin-right: -0.1vw;
+    padding-top: -1vh;
+    background-color: #0a102e;
+}
+
+.d-flex.justify-content-center.txt{
+      margin-top: -3vh;
+    padding-bottom: 1vh;
+    /* padding-top: 2vh; */
+}
+p.fs08{
+    font-size: 2vh;
+}
+svg.MuiSvgIcon-root{
+width: 1.2vw !important;
+}
+
+.col-3.bkgB{
+    flex: 0 0 27%;
+    max-width: 27%;
+}
+.col-9{
+    flex: 0 0 73% !important;
+    max-width: 73% !important;
+}
+.noneWarp{
+    display: none;
+    width: 0px;
+}
+
+.tooltipCopyLink {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .tooltipCopyLink .tooltiptextCopyLink {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -60px;
+  }
+  
+  .tooltipCopyLink .tooltiptextCopyLink::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+  }
+  
+  #tooltipCopyLinkClick:hover .tooltiptextCopyLink {
+    visibility: visible;
+  }

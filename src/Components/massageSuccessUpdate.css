@@ -1,0 +1,21 @@
+.modal-content{
+    /* height: 7vh!important; */
+}
+/* .modal-open .modal::-webkit-scrollbar {
+    display: none !important;
+    overflow: block !important;
+} */
+.fade.massage.modal.show{
+    /* height: 5vh !important; */
+    background-color: initial !important;
+}
+
+.fade.modal-backdrop.show{
+    background-color: initial !important;
+}
+.modal-backdrop.show{
+    background-color: initial !important;
+}
+.fade.modal-backdrop{
+    background-color: initial !important;
+}

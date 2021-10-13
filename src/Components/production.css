@@ -1,0 +1,25 @@
+::-webkit-calendar-picker-indicator {
+    filter:invert(100%);
+    position: absolute;
+    left: 7vw;
+}
+
+span.MuiTypography-root.MuiFormControlLabel-label.MuiTypography-body1{
+    font-size: 0.9vw !important;
+}
+
+label.MuiFormControlLabel-root{
+    /* margin-bottom: 1vh !important; */
+    /* margin-top: 2vh !important; */
+    position: relative;
+}
+.MuiFormControlLabel-root{
+    height: 3vh;
+}
+/* .production_dropdown-menu:hover{
+    background-color: #3A405E !important;
+}
+.dropdown-item:hover{
+    background-color: #3A405E !important;
+
+} */

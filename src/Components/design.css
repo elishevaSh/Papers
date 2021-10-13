@@ -1,0 +1,23 @@
+/* .modal-content{
+  height: 15vh;
+  width: 50vh!important;
+} */
+div[id^=font-picker]{
+  width: 90%;
+}
+div[id^=font-picker] ul li{
+  font-size: 0.9vw;
+}
+div[id^=font-picker] p {
+  font-size: 0.9vw !important;
+}
+label.MuiFormLabel-root.DesignTry-textcontect-103{
+  margin-top: 2vh!important;
+
+}
+.keyBoard{
+width: 2vw;
+}
+
+
+

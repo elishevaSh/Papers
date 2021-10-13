@@ -1,0 +1,403 @@
+
+
+html{
+background-color: #f3f5f5!important;
+height: 100vh!important;
+}
+#root{
+  background-color:#f3f5f5 !important;
+
+}
+
+ .searhBtn{
+    width:300%;
+    color: gray;
+    padding-left: 2.375rem;
+  } 
+  .react-bootstrap-table-pagination-list.col-md-6.col-xs-6.col-sm-6.col-lg-6{
+    margin-top: -1vh;
+    height: 3vh!important;
+    margin-left: 35vw;
+  }
+
+  .imgLogo{
+    border-radius: 50px;
+    height: 6vh;
+    width: 6vh;
+    margin-left: 3vh;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+  }
+  
+  .btnNeWDeals{  
+      background-color: "#A66DFF";
+      width: "100%";
+      color: "white"
+  }
+  
+  .btnDiv{
+    justify-content:flex-end
+  }
+  
+  
+  .imgAnimate{
+    height: 25%;
+    width: 25%;
+    /* margin-left: 5%; */
+    }
+  .containerDivList{
+    border-radius: 12px;
+    background-color: #fff;
+    padding:3vw !important;
+    padding-top: 1.6vw !important;
+    height: 95vh;
+  }
+  .sendEmailFromList{
+    border-radius: 12px;
+    /* margin: 30px; */
+    background-color: #fff;
+    padding-top:3rem !important;
+    height: 80vh;
+    min-height: 80vh;
+    max-height: 100vh;
+    padding-bottom: 87vh !important;  
+  }
+  
+.icons_to_table:focus,.icons_to_table:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+  .table>:not(:last-child)>:last-child>* {
+    border-bottom:0!important;
+    border-top: 0}
+  
+  .containerDiv{
+    padding-top: 6vh;
+    padding-left: 8%;
+    /* height:90vh !important; */
+    overflow-y: hidden;
+  }
+  
+  .searchIcon{
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #BDBDC9;
+  }
+  
+  .btnNew{
+    z-index: 1;
+  }
+  
+  .contactTable{
+    z-index: 0;
+    background-color:white;
+    border-radius: 15px 15px 15px 15px  ;
+  }
+  .contactTable td{
+    padding: .5rem !important;
+    padding-bottom: .0rem !important;
+  
+  }
+  .table td, .table th {
+    padding: .10rem;
+    padding-bottom: .10rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+  }
+  tr:hover{
+    height: 0.2vh !important ;
+    max-height: 0.2vh !important
+  }
+  
+  tr:before{
+    height: 0.2vh !important ;
+    max-height: 0.2vh !important
+  }
+  
+  /*----crop -*/
+  
+  body {
+    margin: 0;
+    padding: 0;
+    /* overflow: hidden; */
+  }
+  
+  .App {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  
+  
+  .crop-container {
+    position: relative;
+    width: 100%;
+    height: 60vh !important;
+  }
+ 
+  
+  .custom-toggler.navbar-toggler {
+    border-color: rgb(255,102,203);
+  } 
+ 
+    .sendd{
+      margin-top: 15vh!important; 
+      width: 80% !important;
+      /* margin-left: 0.1vw!important; */
+  }
+  .sendd:focus { 
+    /* outline: none !important;
+    border-color: white !important;
+    box-shadow: 0 0 10px red; */
+    /* outline-color: white!important; */
+}
+
+.table-hover tbody tr:hover {
+  color: #212529;
+}
+.table-hover>tbody>tr:hover{
+  background-color:rgb(255, 255, 255) !important;
+}
+  .isSignT{
+    border-radius: 5px;
+    
+    background-color: #f8db89!important;
+          /* opacity:0.2; */
+          color: #f5b70d!important;
+          font-weight: bold;
+          margin: 1vh;
+  }
+  .isSignF{
+    border-radius: 5px;
+    
+    background-color:#f5797973!important;
+          /* opacity:0.2; */
+          color: #F70000!important;
+          font-weight: bold;
+          margin: 1vh;
+  }
+  .react-bootstrap-table{
+    margin-right: -1vw;
+    flex: 1 1 auto !important;
+    height: 65vh;
+    overflow-y: scroll !important;
+    overflow-x: scroll !important;
+    margin-top: var(--a);
+    padding: 0px !important ;
+  }
+    .col-md-6.col-xs-6.col-sm-6.col-lg-6{
+      margin-top: 3.5vh;
+      position: absolute;
+    }
+  .react-bootstrap-table-pagination-list.col-md-6.col-xs-6.col-sm-6.col-lg-6{
+    margin-top: -1vh;
+    height: 3vh!important;
+    margin-left: 35vw;
+  }
+    
+
+
+  
+
+  @media only screen and (min-width: 1800px) {
+    .react-bootstrap-table{
+      /* height: 120%; */
+
+    }
+    .react-bootstrap-table-pagination-list.col-md-6.col-xs-6.col-sm-6.col-lg-6{
+      margin-top: -5vh;
+
+    }
+    .col-md-6.col-xs-6.col-sm-6.col-lg-6{
+      margin-top: 1vh;
+
+    }
+    .containerDivList, .sendEmailFromList{
+      height: 99vh!important;
+
+    }
+}
+
+ @media only screen and (min-width: 1800px) {
+    .react-bootstrap-table{
+      /* height: 70vh!important; */
+
+    }
+    .react-bootstrap-table-pagination-list.col-md-6.col-xs-6.col-sm-6.col-lg-6{
+      margin-top: -5vh;
+
+    }
+    .col-md-6.col-xs-6.col-sm-6.col-lg-6{
+      margin-top: 1vh;
+
+    }
+    .containerDivList, .sendEmailFromList{
+      height: 99vh!important;
+
+    }
+}
+/* @media only screen and (min-width: 600px)  {...} */
+
+@media only screen and (min-width: 2000px) {
+  .react-bootstrap-table{
+    /* height: 100%!important; */
+
+  }
+  .react-bootstrap-table-pagination-list.col-md-6.col-xs-6.col-sm-6.col-lg-6{
+    margin-top: -8vh;
+
+  }
+  .col-md-6.col-xs-6.col-sm-6.col-lg-6{
+    margin-top: 10vh;
+
+  }
+}
+
+  .react-bootstrap-table-pagination-list{
+    /* margin-left: 25vh; */
+    /* text-align: center; */
+    /* margin-left: auto!important;
+    margin-right: auto!important; */
+    /* width: auto!important; */
+  }
+  .pagination {
+    margin-top: 5vh;
+  }
+
+  
+
+
+  /* xlarge screen */
+@media only screen and (min-width: 3840px) {
+  ul.pagination.react-bootstrap-table-page-btns-ul {
+    
+    margin-left: 6vw !important;
+    margin-top:8vh!important;
+  }
+
+} 
+
+.react-bootstrap-table table {
+  overflow: scroll !important;
+  table-layout: unset !important;
+  width: max-content !important;
+  min-width: 100% !important;
+}
+/* .react-bootstrap-table{
+  position: relative;
+  top:-2vh;
+} */
+/* large screen */
+@media only screen and (min-width: 1920px)and (max-width: 3830px) {
+  ul.pagination.react-bootstrap-table-page-btns-ul {
+    margin-left: 2vw !important;
+  }
+ }
+ /* medium screen */
+@media only screen and (min-width: 1440px)and (max-width: 1910px) {
+  ul.pagination-page-btns-ul{
+    margin-left: 0vw !important;
+  }
+}
+/* small screen */
+ @media only screen and (min-width: 1280px)and (max-width: 1430px) {
+  ul.pagination.react-bootstrap-table-page-btns-ul {
+    margin-left: 0vw !important;
+  }
+ } 
+
+ @media only screen and (min-width: 3840px) {
+  button#pageDropDown {
+/*  
+
+    margin-left: 12vw !important;
+    margin-top: 8.5vh!important; */
+    /* margin-bottom: 5vh!important; */
+    margin-top: -19vh;
+    /* margin-right: 5vw!important; */
+
+  }
+
+} 
+
+/* large screen */
+@media only screen and (min-width: 1920px)and (max-width: 3830px) {
+  .button#pageDropDown{
+    margin-left: 5vw!important;
+    margin-left: 10vw !important;
+  }
+ }
+
+ .animateSendEmail{
+   position: absolute;
+   z-index: 1111;
+ }
+
+ .animateSendEmail.d-flex.justify-content-center.align-items-center.w-100 {
+   margin-top: 20vh;
+   margin-left: -13vh!important;
+}
+
+  /* xlarge screen */
+  @media only screen and (min-width: 3840px) {
+    button.btn.w-100.bkgstyle.sendd {
+      
+      /* margin-left: 12vw !important;*/
+      margin-top: 55vh!important; 
+    }
+  
+  } 
+  /* large screen */
+  @media only screen and (min-width: 1920px)and (max-width: 3830px) {
+    button.btn.w-100.bkgstyle.sendd {
+  
+      margin-top: 43vh!important;
+      /* margin-left: 10vw !important; */
+    }
+   }
+   /* medium screen */
+  @media only screen and (min-width: 1440px)and (max-width: 1910px) {
+    button.btn.w-100.bkgstyle.sendd{
+      margin-top: 32vh!important;
+
+      /* margin-left: 8vw !important; */
+    }
+  }
+  /* small screen */
+   @media only screen and (min-width: 1280px)and (max-width: 1430px) {
+    button.btn.w-100.bkgstyle.sendd{
+      margin-top: 30vh!important;
+
+      /* margin-left: 8vw !important; */
+    }
+   
+   } 
+
+    /***** style of mobail *****/
+   @media only screen and (max-width: 640px){
+   .containerDivList {
+    margin: 0vh !important;
+    height: 100% !important;
+    width: 100% !important;
+   }
+   .react-bs-table-sizePerPage-dropdown.dropdown{
+    display: none;
+   }
+  }
+
+  
+ /* margin-top: -5vh; */
+ button.btn.bkgstyle.sendd{
+   width: 10vw !important;
+ }
+ svg.MuiSvgIcon-root {
+  width: 4vw !important;
+}
