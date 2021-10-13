@@ -1,0 +1,129 @@
+
+@media only screen and (max-width: 640px){
+.table>thead{
+    display: none;
+}
+.table td, .table th{
+    border-top: 0 !important;
+}
+
+.react-bootstrap-table {
+    height: 85vh !important;
+    margin: 0 ;
+}
+}
+
+#MobailPaperList_container{
+    padding: 0vh !important;
+   background-color: white;
+   
+}
+
+.MobailPaperList_header{
+    background-color: #DB0E65;
+    height: 14vh !important;
+    width: 100%;
+    
+}
+
+#button.rc-menu-button{
+    float: right;
+    padding-top: 2vh;
+}
+
+.mobailPaperList_div{
+    width: 100%;
+     padding-top: 0vh;
+     padding-left: 2vh;
+     padding-right: 0vh;
+     background-color: white ; 
+     height: 85.5vh;
+     z-index: -1;
+}
+
+#plusMobail{
+    text-align: center;
+    vertical-align: middle;
+    box-shadow: 0px 3px 6px #00000021;
+    z-index: 1 ;
+    float: right;
+    background-image: linear-gradient(180deg,#DB0E65 ,#b70b60b5 );
+    padding-bottom: 3vh;
+    position: fixed;
+    bottom: 2.5vh;
+    right: 2vh;
+    background-color: #DB0E65 ;
+    width: 6vh !important;
+    height: 6vh !important;
+    color: white;
+    border-radius:50% ;
+    font-weight: bold;
+    font-size: 3.5vh !important;
+}
+
+.button.btn.bkgstyle.sendMobail{
+    border: 1px solid #c40163;
+    font-weight: bold;
+    width: 40vw !important ;
+    
+}
+.button.btn.bkgstyle.sendMobail {
+    width: 30vw;
+}
+.sendEmailFromList_Mobail.col{
+
+ float: right;
+display: none;
+margin: 0;
+ z-index: 1;
+ background-color: white;
+ height: 85vh !important;
+}
+
+.lablet{
+    color: white;
+    font-size: large;
+    font-weight: 600;
+    position: fixed;
+    width: 80vw;
+    text-align: center;
+    left: 10vw;
+}
+
+.bottun.d-flex.justify-content-start.titleb {
+    width: 15vw !important;
+}
+.d-flex.justify-content-between.hd{
+    padding-top: 5vh !important;
+}
+
+.lableDetails{
+font-size: medium;
+font-weight: 700;
+padding: 0.5vh !important;
+}
+.lableProps{
+    display: block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 80vw;
+    height: 1.2em;
+    white-space: nowrap;
+}
+.grid.detail {
+    padding: 1vh 0vh;
+    margin: 0;
+}
+.lable.plusLable {
+    font-size: 3.5vh !important;
+    
+}
+.lableContant{
+    padding: 0.5vh 1vh;
+}
+img#rectangle {
+    height: 8vw;
+}
+.arrowDown {
+    width: 6vw !important;
+}

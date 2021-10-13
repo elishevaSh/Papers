@@ -1,0 +1,28 @@
+.managerComponent_update{
+    border-radius: 4px;
+    display: flex;
+     justify-content: center;
+      bottom: 4vh;
+      margin-left:2vh;
+      border-color:#DB0E65  !important;
+    background-color: #FFFFFF !important;
+      font-size:1vw;
+      width: 7vw;
+}
+
+/* .managerComponent_update:hover{
+    color:#FFFFFF !important;
+    background-color: #F7B500 !important;
+    font-size: 1vw;
+} 
+.managerComponent_update_disabled{
+    background-color: red !important;
+}
+.managerComponent_update{
+    cursor: pointer !important;
+    color:#F7B500 !important;
+    border-color:#F7B500 !important;
+    background-color: #FFFFFF !important;
+    font-size: 1vw;
+    
+} */

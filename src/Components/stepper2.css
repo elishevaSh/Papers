@@ -1,0 +1,50 @@
+.itemStep{
+    width: 42px;
+    height: 42px;
+    color:#BDBDBD ;
+    border: #BDBDBD solid 3px;
+    border-radius: 50px; 
+    font-size: 1.5vw;
+    font-weight: bold;
+    cursor: pointer;
+        /* linear-gradient(180deg,#f7b500 0,#d58428)!important; */
+/* background-image: linear-gradient(rgb(247, 181, 0) 0px, rgb(213, 132, 40)) !important; */
+
+}
+.lineStep{
+    width: 7vw;
+    height: 1vh;
+    display: inline-block;
+    background-color:#BDBDBD ;
+    border-radius: 50px;
+}
+.lineStep2{
+    width: 10vw;
+    height: 1vh;
+    display: inline-block;
+    background-color:#BDBDBD ;
+    border-radius: 50px;
+}
+.numberStep{
+    font-size: 1.4vw;
+    margin-top: 0.5vh;
+}
+.stepWord{
+    color: #787D91;
+  font-size: 2vh;
+}
+.bkg{
+    background: linear-gradient(to bottom, #DB0E65  0%, #DB0E65  100%) !important;
+    z-index: 6;
+    /* border:#d58428; */
+}
+.bkgG{
+    background: green !important;
+    z-index: 6;
+    /* border:#d58428; */
+}
+
+/* .modal-body {
+    max-height: calc(100vh - 200px);
+    overflow-y: auto;
+} */

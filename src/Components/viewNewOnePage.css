@@ -1,0 +1,211 @@
+
+.tring .ql-container.ql-snow {
+  border: 0px solid white !important;
+}
+.tring .ql-toolbar.ql-snow{
+  border: 0px solid white !important;
+  color: white !important;
+}
+.tring .ql-snow .ql-stroke{
+  stroke: white !important;
+}
+
+.btn-primary{
+  background: #DB0E65 0% 0% no-repeat padding-box !important;
+  border-color:#DB0E65 0% 0% no-repeat padding-box !important;
+}
+.pdfLink{
+text-align: center;
+}
+.btn-primary {
+  border-color: #DB0E65 !important;
+}
+.viewQuill .ql-toolbar.ql-snow {
+  display:none !important;
+}
+.viewQuill .ql-container.ql-snow {
+  border: 1px solid rgba(204, 204, 204, 0);
+  width: 100%;
+  height: 40vh !important;
+  margin-top: 3vh;
+
+}
+.viewQuill .ql-toolbar.ql-snow+.ql-container.ql-snow{
+height: auto !important;
+margin-bottom: 6%;
+min-height: 22vh;
+}
+.ql-toolbar.ql-snow + .ql-container.ql-snow{
+  overflow: "auto" !important;
+  scrollbar-width: 30px !important;
+}
+div.ql-editor.ql-blank{
+  height: 22vh !important;
+}
+::-webkit-scrollbar{
+  width: 8px;
+}
+
+/* @media only screen and (min-width: 1600px) {
+  .signature {
+      margin-top: 2vw!important;
+      height:"0vh"
+  }
+}*/
+ @media only screen and (min-width: 1700px) {
+  .signature {
+      margin-top: 5vw!important;
+      /* height:"5vh" */
+  } 
+} 
+
+
+.signature {
+  /* margin-bottom: -16vh!important; */
+  /* margin-top: 4vh !important; */
+  text-align: center;
+  margin-left: 5vw;
+  /* margin-top: 3vw!important; */
+  /* margin: 2.5vh ; */
+  margin-top: 2vw;
+
+}
+div#toolbar{
+  display: none;
+}
+.subjectAndBodyEmail{
+  background-color: #e7e9eb;
+  height: 4vh;
+  width: 80%;
+  margin: auto;
+  margin-top: 1vh;
+  /* margin-right: 2vw; */
+  /* margin-left: 2vw; */
+  font-size: 0.8vw;
+  /* text-align: center; */
+}
+.bodyEmail{
+  height: 24vh !important;
+  /* line-height:24vh !important; ; */
+  /* margin-top: 2vw !important; */
+
+}
+.center{
+  font-size: 0.8vw;
+  text-align: center;
+  width: 80%;
+  margin: auto;
+}
+.contactDetails{
+  position: relative;
+   height: 10vh;
+}
+
+
+
+
+
+
+/* xlarge screen */
+@media only screen and (min-width: 3840px) {
+  img.signature {
+    
+    bottom: 6vh!important;
+    
+  }
+
+} 
+/* large screen */
+@media only screen and (min-width: 1920px)and (max-width: 3830px) {
+  img.signature {
+    
+    bottom: 5vh!important;
+  }
+ }
+
+ /* medium screen */
+@media only screen and (min-width: 1440px)and (max-width: 1910px) {
+  img.signature {
+    bottom: 3vh!important;
+  }
+}
+/* small screen */
+ @media only screen and (min-width: 1280px)and (max-width: 1430px) {
+  img.signature {
+    
+    bottom: 3vh!important;
+  }
+ 
+ }
+ .bkgCustomerSignitureButton{
+  border: 1px solid #DB0E65;
+  cursor: pointer !important;
+  background-color: rgb(245, 245, 245);
+  height: 5.5vh;
+  font-size: 2vh;
+
+ }
+ .bkgCustomerSignitureButton:hover{
+  background-color: #DB0E65 !important;
+  color: white;
+
+ }
+
+.mb0{
+  margin-bottom: 0 !important;
+}
+/* input:focus{
+  color:black !important
+} */
+button:focus{
+  box-shadow: 0 0 0 0 rgb(38 143 255 / 50%) !important;
+}
+.view{
+  width:calc(var(--variable-width))
+}
+.endItem4View {
+  text-decoration: none !important;
+  border-bottom: 0 !important;
+  display: block !important;
+  /* width: auto !important; */
+  /* width: fit-content !important ; */
+  /* width: 10.7vw !important; */
+  white-space:nowrap;
+  max-width: 20vw !important;
+  font-size: 1vw;
+  color: #FBFBFD;
+  overflow: hidden;
+ 
+}
+.endItem4View:focus{
+  color:#FBFBFD !important
+}
+
+@media only screen and (max-width: 640px){
+  
+  /* .select__control.css-1rimajb-control{
+    width: 89vw !important;
+    color: gray;
+    padding-left: 2.375rem;
+    border: 0;
+    background-Color: '#FFFFFF' !important;
+    box-shadow: 0px 1px 6px #00000026;
+    position:fixed !important;
+    top:11vh;
+  } */
+  .d-flex.justify-content-left.titel2 {
+    margin-top: 3vh;
+    margin-left: 10vw !important;
+}
+}
+
+.subjectAndBodyEmail{
+  font-size: 2vh !important;
+}
+.height5{
+  height: 5.5vh;
+}
+.viewQuill .ql-editor{
+  font-size: 1.3vw !important;
+}
+

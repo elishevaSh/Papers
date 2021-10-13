@@ -1,0 +1,314 @@
+import React, { useState, useCallback, useEffect, } from 'react'
+import Cropper from 'react-easy-crop'
+import Slider from '@material-ui/core/Slider'
+import Button from '@material-ui/core/Button'
+import Typography from '@material-ui/core/Typography'
+import { withStyles } from '@material-ui/core/styles'
+import { getOrientation } from 'get-orientation/browser'
+import ImgDialog from './ImgDialog'
+import ImgDialogCropper from './ImgDialogCropper'
+import { getCroppedImg, getRotatedImage } from './canvasUtils'
+import { styles } from './styles'
+import ReactDOM from 'react-dom';
+import { connect } from 'react-redux';
+import { actions } from '../Redux/Action';
+import Dialog from '@material-ui/core/Dialog'
+import IconButton from '@material-ui/core/IconButton'
+import CloseIcon from '@material-ui/icons/Close'
+import Slide from '@material-ui/core/Slide'
+import zoomIcon from './assets/zoom.svg';
+import rotationIcon from './assets/rotation.svg';
+
+
+const ORIENTATION_TO_ANGLE = {
+    '3': 180,
+    '6': 90,
+    '8': -90,
+}
+function Transition(props) {
+    return <Slide direction="up" {...props} />
+}
+export const Demo = (props) => {
+    const [imageSrc, setImageSrc] = React.useState(props.completeImageUrl)
+    const [crop, setCrop] = useState({ x: 0, y: 0 })
+    const [rotation, setRotation] = useState(props.rotationImage)
+    const [zoom, setZoom] = useState(props.zoomImage)
+    const [croppedAreaPixels, setCroppedAreaPixels] = useState(null)
+    // const [croppedImage, setCroppedImage] = useState(null)
+    const [show, setShow] = useState(true);
+
+    const onCropComplete = useCallback((croppedArea, croppedAreaPixels) => {
+        setCroppedAreaPixels(croppedAreaPixels)
+    }, [])
+
+    const onFileChange = async (e) => {
+        alert(zoom + " " + rotation)
+        if (e.target.files && e.target.files.length > 0) {
+            const file = e.target.files[0]
+            let imageDataUrl = await readFile(file)
+
+            // apply rotation if needed
+            const orientation = await getOrientation(file)
+            const rotation = ORIENTATION_TO_ANGLE[orientation]
+            if (rotation) {
+                imageDataUrl = await getRotatedImage(imageDataUrl, rotation)
+            }
+            props.setCropperImage(imageDataUrl)
+            props.setCompleteImageUrl(imageDataUrl)
+            setRotation(0);
+            setZoom(1)
+
+        }
+    }
+
+    const showCroppedImage = useCallback(async () => {
+        try {
+            //save the complete image url:
+            // let reader = new FileReader();
+            // reader.onloadend = () => {
+            //     props.changeImageImage(reader.result)
+            // }
+            const croppedImage = await getCroppedImg(
+                imageSrc,
+                croppedAreaPixels,
+                rotation
+            )
+            // await setCroppedImage(croppedImage);
+            fetch(croppedImage).then(r => {
+                return r.blob();
+            }).then(async (blobFile) => {
+
+                let name = 'defaultImgSrc.png';
+                var fileToUpload = await new File([blobFile], name, {
+                    lastModified: new Date().getTime(),
+                    type: blobFile.type,
+                });
+                let imgUrl = await URL.createObjectURL(fileToUpload);
+                await props.setCropperImage(imgUrl)
+                await props.setZoomImage(zoom);
+                await props.setRotationImage(rotation);
+                await props.addImageFromDb({imageType:"businessSignature",file:fileToUpload});
+                await props.changeImageSrc(null)
+            })
+        } catch (e) {
+            console.error(e)
+        }
+        closeCropper()
+    }, [imageSrc, croppedAreaPixels, rotation])
+
+
+    // const onClose = useCallback(() => {
+    //     setCroppedImage(null)
+    //     props.changeImageSrc(null)
+    // }, [])
+    async function closeCropper() {
+        await props.changeImageSrc(null);
+        await setImageSrc(null);
+        await setZoom(1);
+        await setRotation(0);
+    }
+
+    useEffect(() => {
+        setImageSrc(props.quote.imageImage ? props.quote.imageImage : "")
+    }, [props.quote.imageImage,props.completeImageUrl])
+
+
+
+    return (<>
+
+        <Dialog
+            fullScreen
+            open={show}
+            onClose={closeCropper}
+            TransitionComponent={Transition}
+        >
+            <div ><>
+                {/* <AppBar>
+                    <Toolbar>
+                        <IconButton
+                            color="inherit"
+                            onClick={props.onClose}
+                            aria-label="Close"
+                        >
+                            <CloseIcon />
+                        </IconButton>
+                
+                    </Toolbar>
+                </AppBar> */}
+                <IconButton
+                    color="inherit"
+                    onClick={closeCropper}
+                    aria-label="Close"
+                >
+                    <CloseIcon />
+                </IconButton>
+                {show ?
+                    <div
+                    // className="container"
+                    // className="d-flex justify-content-center align-items-center"
+                    >
+                        {/* props.quote ? props.quote.imageImage ? props.quote.imageImage : autumnForest : autumnForest */}
+                        {imageSrc ? (
+                            // {props.quote2.imageSrc ? (
+                            //  { props.quote.imageImage ? (
+                            <React.Fragment>
+                                {/* <div className="container"> */}
+                                <div style={{ fontSize: "2.5vh", fontWeight: "bold" }} className=" d-flex justify-content-center align-items-center">Image Editor</div>
+                                <div
+                                // className={classes.cropContainer}
+                                >
+                                    <Cropper
+                                        // image={props.quote.imageImage}
+                                        image={imageSrc}
+                                        // image={props.quote2.imageSrc}
+                                        crop={crop}
+                                        rotation={rotation}
+                                        zoom={zoom}
+                                        aspect={props.size / 1}
+                                        onCropChange={setCrop}
+                                        onRotationChange={setRotation}
+                                        onCropComplete={onCropComplete}
+                                        onZoomChange={setZoom}
+                                    />
+                                </div>
+                                <div className=" d-flex justify-content-center x">
+                                    <div
+                                        // style={{ marginTop: "65vh", marginLeft:"25vw", marginRight:"25vw" }} 
+                                        className=" d-flex justify-content-around bkgCrop"
+                                    //  className={classes.controls}
+                                    >
+                                        <div className=" d-flex justify-content-center" style={{ width: "18vw", padding: "1vh" }}
+                                        //  className={classes.sliderContainer}
+                                        >
+                                            <img src={zoomIcon} style={{ width: "2vh", height: "2vh", marginTop: "2vh" }}></img>
+                                            <Typography style={{ padding: "1vh", marginRight: "2vw" }}
+                                                variant="overline"
+                                            // classes={{ root: classes.sliderLabel }}
+                                            >
+                                                Scale
+                                            </Typography>
+                                            <Slider
+                                                value={zoom}
+                                                min={1}
+                                                max={3}
+                                                step={0.1}
+                                                aria-labelledby="Zoom"
+                                                // classes={{ root: classes.slider }}
+                                                onChange={(e, zoom) => setZoom(zoom)}
+                                            />
+                                        </div>
+                                        <div className=" d-flex justify-content-center" style={{ width: "18vw", padding: "1vh" }}
+                                        // className={classes.sliderContainer}
+                                        >
+                                            <img src={rotationIcon} style={{ width: "2vh", height: "2vh", marginTop: "2vh" }}></img>
+                                            <Typography style={{ padding: "1vh", marginRight: "2vw" }}
+                                                variant="overline"
+                                            // classes={{ root: classes.sliderLabel }}
+                                            >
+                                                Rotation
+                                            </Typography>
+                                            <Slider
+                                                value={rotation}
+                                                min={0}
+                                                max={360}
+                                                step={1}
+                                                aria-labelledby="Rotation"
+                                                // classes={{ root: classes.slider }}
+                                                onChange={(e, rotation) => setRotation(rotation)}
+                                            />
+                                        </div>
+
+
+                                        {/* <Button
+                                    onClick={closeCropper}
+                                    variant="contained"
+                                // color="primary"
+                                >
+                                    close
+                        </Button> */}
+                                    </div>
+                                </div>
+                                <div className=" d-flex justify-content-center">
+                                    <label for="fileInput" className=" d-flex justify-content-center align-items-center bkgWhite cropperBtn">Upload new</label>
+                                    <input
+                                        type={"file"}
+                                        id="fileInput"
+                                        htmlFor="myInput"
+                                        accept="image/*"
+                                        style={{
+                                            display: 'none',
+                                            cursor: 'pointer',
+                                            // width: this.props.quote.logoWidth,
+                                        }}
+                                        onChange={(e) => onFileChange(e)}
+                                    />
+                                    <button className=" bkgorange cropperBtn"
+                                        onClick={(e) => showCroppedImage(e)}>Apply</button>
+                                </div>
+                                {/* <ImgDialog img={croppedImage} onClose={onClose} /> */}
+                                {/* <ImgDialogCropper img={props.quote2.imageSrc} onClose={onClose} /> */}
+                                {/* </div> */}
+                            </React.Fragment>
+                        ) : (
+                            <>
+                                {/* <input type="file" onChange={onFileChange} accept="image/*" >
+                             <button className=" bkgorange aaaa"
+                            >Uplaud new</button></input> */}
+                                {/* <div className="d-flex justify-content-center align-items-center"> */}
+                                    {/* <img className="backgroundImage" alt="" src={props.cropperImage} />
+                                </div>
+                                <label for="fileInput" className=" bkgorange cropperBtn">upload new
+                                </label>
+                                <input
+                                    type={"file"}
+                                    id="fileInput"
+                                    htmlFor="myInput"
+                                    accept="image/*"
+                                    style={{
+                                        display: 'none',
+                                        cursor: 'pointer',
+                                        // width: this.props.quote.logoWidth,
+                                    }}
+                                    onChange={(e) => { onFileChange(e, props.changeImageSrc) }}
+                                /> */}
+                                {/* <input type="file" onChange={onFileChange} accept="image/*" /> */}
+                            </>
+                            // <input type="file" onChange={onFileChange} accept="image/*" />
+                        )}
+                    </div> :
+                    <></>}
+            </>
+            </div>
+        </Dialog>
+
+    </>
+    )
+}
+const mapDispatchToProps = (dispatch) => ({
+    changeImageSrc: (image) => dispatch(actions.setImageSrc(image)),
+    addImageFromDb: (image) => dispatch(actions.addImageFromDb(image)),
+})
+const mapStateToProps = (state) => {
+    return {
+        quote2: state.quote,
+        quote: state.quote.quote,
+    };
+}
+
+// export default Demo;
+function readFile(file) {
+    return new Promise((resolve) => {
+        const reader = new FileReader()
+        reader.addEventListener('load', () => resolve(reader.result), false)
+        reader.readAsDataURL(file)
+    })
+}
+
+// const StyledDemo = withStyles(styles)(Demo)
+
+// const rootElement = document.getElementById('root')
+// ReactDOM.render(<StyledDemo />, rootElement)
+
+// export default connect(mapStateToProps, mapDispatchToProps)(withStyles(styles)(Demo));
+export default connect(mapStateToProps, mapDispatchToProps)(Demo);
+

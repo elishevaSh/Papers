@@ -1,0 +1,22 @@
+.select__indicator.select__dropdown-indicator.css-tlfecz-indicatorContainer{
+    display: none !important;
+}
+.css-1okebmr-indicatorSeparator, .css-1hb7zxy-IndicatorsContainer{
+    display: none !important;
+}
+.selectInput{
+    flex-direction:column;
+}
+.basic-multi-select.css-2b097c-container{
+    height: auto !important;
+}
+.select__value-container.select__value-container--is-multi.select__value-container--has-value.css-g1d714-ValueContainer {
+    max-height: 25vh !important;
+    overflow-y:  auto !important;
+}
+.css-12jo7m5.select__multi-value__label {
+    width: 80% !important;
+}
+.css-xb97g8.select__multi-value__remove {
+    width: 20% !important;
+}

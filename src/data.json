@@ -1,0 +1,66 @@
+{
+    "priceOffer": [
+        {
+            "Fname": "Leader codes",
+            "Lname": "codes",
+            "pone": "0123456789",
+            "Email": "aizakov@leader.codes",
+            "adress": "kineret 15",
+            "id": "101",
+            "offersId": "207677899",
+            "customerId": "206665689",
+            "startDate": "21/07/20",
+            "expirationDate": "21/08/20",
+            "finalPrice": "1000+",
+            "status": "paid",
+            "image": "",
+            "description": "",
+            "productsIdsList": [
+                "200"
+            ],
+            "relatedProductsIdsList": [
+                "123",
+                "124",
+                "125"
+            ]
+        },
+        {
+            "id": "103",
+            "offersId": "207688899",
+            "customerId": "208565689",
+            "startDate": "",
+            "expirationDate": "",
+            "finalPrice": "",
+            "status": "unpaid",
+            "image": "",
+            "description": "",
+            "productsIdsList": [
+                "200"
+            ],
+            "relatedProductsIdsList": [
+                "123",
+                "124"
+            ]
+        },
+        {
+            "id": "103",
+            "offersId": "207677899",
+            "customerId": "206665689",
+            "startDate": "",
+            "expirationDate": "",
+            "finalPrice": "",
+            "status": "paid",
+            "image": "",
+            "description": "",
+            "productsIdsList": [
+                "200",
+                "300"
+            ],
+            "relatedProductsIdsList": [
+                "153",
+                "144",
+                "15"
+            ]
+        }
+    ]
+}
